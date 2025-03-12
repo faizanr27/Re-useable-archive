@@ -11,7 +11,7 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Hello, TypeScript Backend!');
 });
 
-app.get("/product", (req: Request, res: Response) => {
+app.get("/product", (req, res) => {
     res.send("This is Product Page");
   })
 
