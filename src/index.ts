@@ -11,6 +11,10 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Hello, TypeScript Backend!');
 });
 
+app.get("/product", (req: Request, res: Response) => {
+    res.send("This is Product Page");
+  })
+
 // Start Server
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
