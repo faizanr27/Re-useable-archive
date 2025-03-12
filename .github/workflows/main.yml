@@ -30,7 +30,7 @@ jobs:
 
     steps:
       - name: Deploy Nodejs on hostinger
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.VPS_HOST}}
           username: ${{ secrets.VPS_USER}}
