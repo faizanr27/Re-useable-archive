@@ -1,0 +1,32 @@
+{
+  "name": "re-useable-archive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "dev": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizanr27/Re-useable-archive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/faizanr27/Re-useable-archive/issues"
+  },
+  "homepage": "https://github.com/faizanr27/Re-useable-archive#readme",
+  "dependencies": {
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "express": "^4.21.2",
+    "ts-node": "^10.9.2"
+  }
+}
