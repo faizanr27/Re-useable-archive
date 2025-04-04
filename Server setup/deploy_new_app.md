@@ -1,5 +1,8 @@
+```
 sudo nano /etc/nginx/sites-available/<projectname>
+```
 ---------------------------------------------------
+```
 server {
     listen 80;
     server_name <domain name>; // domain name
@@ -12,17 +15,19 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
-
+```
 ------------------------------------------------
-
+```
 sudo ln -s /etc/nginx/sites-available/<projectname> /etc/nginx/sites-enabled/
 sudo nginx -t  # Test the configuration
 sudo systemctl reload nginx
+```
 
 
 ------------------------------------------
-
+```
 sudo apt install certbot python3-certbot-nginx -y
 
-sudo certbot --nginx -d <domain-name>  
+sudo certbot --nginx -d <domain-name>
+```
 
